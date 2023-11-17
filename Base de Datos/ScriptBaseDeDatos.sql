@@ -52,11 +52,19 @@ create table Periodos_Actualizacion (
 );
 
 -- Rol (Ci, esAdmin)
-create table Rol (
+create table Roles (
+    RolId int primary key auto_increment,
+    rol varchar(50) not null,
+
+);
+
+-- UsuarioRol (Ci, RolId)
+create table UsuarioRol (
     Ci int not null,
-    esAdmin boolean not null,
-    primary key (Ci),
-    foreign key (Ci) references Funcionarios(Ci)
+    RolId int not null,
+    primary key (Ci, RolId),
+    foreign key (Ci) references Funcionarios(Ci),
+    foreign key (RolId) references Roles(RolId)
 );
 
 -- inserta los datos de prueba 10 para cada tabla
@@ -111,19 +119,18 @@ insert into Carnet_Salud (ci, fch_emision, fch_vencimiento, comprobante) values
 insert into Periodos_Actualizacion (año, semestre, fch_inicio, fch_fin)
 values (2020, 1, '2023-11-01', '2023-11-15');
 
-insert into Rol (ci, esadmin) values
-(1234567, true),
-(2345678, false),
-(3456789, false),
-(4567890, false),
-(5678901, false),
-(6789012, false),
-(7890123, false),
-(8901234, false),
-(9012345, false),
-(1234568, false);
+insert into Roles (rol) values
+('Administrador'),
+('Funcionario');
 
-DELETE FROM Funcionarios WHERE ci = 2345678;
-DELETE FROM Agenda WHERE ci = 2345678;
-DELETE FROM Carnet_Salud WHERE ci = 2345678;
-DELETE FROM Rol WHERE ci = 2345678;
+insert into UsuarioRol (Ci, RolId) values
+(1234567, 1),
+(2345678, 2),
+(3456789, 2),
+(4567890, 2),
+(5678901, 2),
+(6789012, 2),
+(7890123, 2),
+(8901234, 2),
+(9012345, 2),
+(1234568, 2);
