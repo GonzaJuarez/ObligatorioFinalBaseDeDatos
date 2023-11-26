@@ -54,8 +54,7 @@ create table Periodos_Actualizacion (
 -- Rol (Ci, esAdmin)
 create table Roles (
     RolId int primary key auto_increment,
-    rol varchar(50) not null,
-
+    rol varchar(50) not null
 );
 
 -- UsuarioRol (Ci, RolId)
@@ -69,28 +68,28 @@ create table UsuarioRol (
 
 -- inserta los datos de prueba 10 para cada tabla
 insert into Logins (logid, password) values
-('juanperez', '123'),
-('perdrogonzalez', '123'),
-('mariarodriguez', '123'),
-('josegarcia', '123'),
-('anafernandez', '123'),
-('lucialopez', '123'),
-('carlosmartinez', '123'),
-('sofiasanchez', '123'),
-('jorgegomez', '123'),
-('miguelgimenez', '123');
+('1234567', '123'),
+('2345678', '123'),
+('3456789', '123'),
+('4567890', '123'),
+('5678901', '123'),
+('6789012', '123'),
+('7890123', '123'),
+('8901234', '123'),
+('9012345', '123'),
+('1234568', '123');
 
 insert into Funcionarios (ci, nombre, apellido, fch_nacimiento, direccion, telefono, email, logid) values
-(1234567, 'Juan', 'Perez', '1990-01-01', 'Direccion 1', '099123456', 'juanperez@gmail.com', 'juanperez'),
-(2345678, 'Pedro', 'Gonzalez', '1990-01-01', 'Direccion 2', '099123456', 'perdrogonzalez@gmail.com', 'perdrogonzalez'),
-(3456789, 'Maria', 'Rodriguez', '1990-01-01', 'Direccion 3', '099123456', 'mariarodriguez@gmail.com', 'mariarodriguez'),
-(4567890, 'Jose', 'Garcia', '1990-01-01', 'Direccion 4', '099123456', 'josegarcia@gmail.com', 'josegarcia'),
-(5678901, 'Ana', 'Fernandez', '1990-01-01', 'Direccion 5', '099123456', 'anafernandez@gmail.com', 'anafernandez'),
-(6789012, 'Lucia', 'Lopez', '1990-01-01', 'Direccion 6', '099123456', 'lucialopez@gmail.com', 'lucialopez'),
-(7890123, 'Carlos', 'Martinez', '1990-01-01', 'Direccion 7', '099123456', 'carlosmartinez@gmail.com', 'carlosmartinez'),
-(8901234, 'Sofia', 'Sanchez', '1990-01-01', 'Direccion 8', '099123456', 'sofiasanchez@gmail.com', 'sofiasanchez'),
-(9012345, 'Jorge', 'Gomez', '1990-01-01', 'Direccion 9', '099123456', 'jorgegomez@gmail.com', 'jorgegomez'),
-(1234568, 'Miguel', 'Gimenez', '1990-01-01', 'Direccion 10', '099123456', 'miguelgimenez@gmail.com', 'miguelgimenez');
+(1234567, 'Juan', 'Perez', '1990-01-01', 'Direccion 1', '099123456', 'juanperez@gmail.com', '1234567'),
+(2345678, 'Pedro', 'Gonzalez', '1990-01-01', 'Direccion 2', '099123456', 'perdrogonzalez@gmail.com', '2345678'),
+(3456789, 'Maria', 'Rodriguez', '1990-01-01', 'Direccion 3', '099123456', 'mariarodriguez@gmail.com', '3456789'),
+(4567890, 'Jose', 'Garcia', '1990-01-01', 'Direccion 4', '099123456', 'josegarcia@gmail.com', '4567890'),
+(5678901, 'Ana', 'Fernandez', '1990-01-01', 'Direccion 5', '099123456', 'anafernandez@gmail.com', '5678901'),
+(6789012, 'Lucia', 'Lopez', '1990-01-01', 'Direccion 6', '099123456', 'lucialopez@gmail.com', '6789012'),
+(7890123, 'Carlos', 'Martinez', '1990-01-01', 'Direccion 7', '099123456', 'carlosmartinez@gmail.com', '7890123'),
+(8901234, 'Sofia', 'Sanchez', '1990-01-01', 'Direccion 8', '099123456', 'sofiasanchez@gmail.com', '8901234'),
+(9012345, 'Jorge', 'Gomez', '1990-01-01', 'Direccion 9', '099123456', 'jorgegomez@gmail.com', '9012345'),
+(1234568, 'Miguel', 'Gimenez', '1990-01-01', 'Direccion 10', '099123456', 'miguelgimenez@gmail.com', '1234568');
 
 insert into Agenda (nro, ci, fch_agenda) values
 (1, 1234567, '2020-01-01'),

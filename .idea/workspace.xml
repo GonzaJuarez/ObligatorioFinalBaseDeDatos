@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3de56507-e0ad-4ed6-898a-2b776b767232" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Obligatorio Final/HTML/formulario_carnet_de_salud.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatorio Final/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatorio Final/alta_funcionarios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatorio Final/login.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ObligatorioFinalBaseDeDatos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ObligatorioFinalBaseDeDatos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/controllers/logins.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/controllers/logins.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/dataBase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/dataBase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/routes/logins.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/routes/logins.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base de Datos/ScriptBaseDeDatos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Base de Datos/ScriptBaseDeDatos.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base de Datos/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Base de Datos/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/alta_funcionario.html" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/HTML/alta_funcionario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/ficha_fucionarios.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/HTML/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Obligatorio Final/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -36,22 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Usuario\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\gonza\\OneDrive\\Escritorio\\Base de Datos\\ObligatorioFinalBaseDeDatos\\Api\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JavaScript Debug.ficha_fucionarios.html">
     <configuration name="alta_funcionario.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ObligatorioFinalBaseDeDatos/Obligatorio Final/HTML/alta_funcionario.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -77,10 +93,18 @@
       <workItem from="1700219680120" duration="109000" />
       <workItem from="1700589988065" duration="54000" />
       <workItem from="1700748207824" duration="6062000" />
+      <workItem from="1700956688312" duration="8954000" />
+      <workItem from="1701008914658" duration="737000" />
+      <workItem from="1701012975226" duration="7025000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Obligatorio Final/Login.js" />
+      </list>
+    </option>
   </component>
 </project>
