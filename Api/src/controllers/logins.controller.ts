@@ -7,14 +7,20 @@ const getLogins = async (req: Request, res: Response) => {
 };
 
 const getLoginById = async (req: Request, res: Response) => {
-    const { logid } = req.params;
-    const result = await pool.query('SELECT * FROM Logins WHERE logid = ?', [logid]);
+    const { logid, password } = req.body;
+    const result = await pool.query('SELECT 1 EXISTE FROM Logins WHERE logid = ? and UserPassword = ?', [logid, password]);
     if (result.length <= 0) {
-        res.status(404).json({ message: "Login no encontrado" });
+        res.status(404).json({
+            error: true,
+            message: "Login no encontrado"
+        });
         console.log("Login no encontrado");
-    } else {
-        res.json(result[0]);
     }
+    res.json({
+        error: false,
+        message: 'Login encontrado',
+        logid: logid
+    });
 };
 
 const postLogin = async (req: Request, res: Response) => {

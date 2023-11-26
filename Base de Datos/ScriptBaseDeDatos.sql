@@ -6,7 +6,7 @@ use Obligatorio_Base_de_Datos;
 -- Logins (LogId, Password)
 create table Logins (
     LogId varchar(50) not null,
-    Password varchar(50) not null,
+    UserPassword varchar(50) not null,
     primary key (LogId)
 );
 
