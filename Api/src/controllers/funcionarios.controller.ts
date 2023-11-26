@@ -19,22 +19,31 @@ const getFuncionarioByCi = async (req: Request, res: Response) => {
 
 const postFuncionario = async (req: Request, res: Response) => {
     const { ci, nombre, apellido, fecha_nacimiento, direccion, telefono, email, logid } = req.body;
-
-    const [ rows] = await pool.query('INSERT INTO Funcionarios (Ci, Nombre, Apellido, Fch_Nacimiento, Direccion, Telefono, Email, LogId) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-
+    if (!ci) {
+        return res.status(200).json({ message: 'Ci es obligatorio' });
+    } else if (!nombre) {
+        return res.status(200).json({ message: 'Nombre es obligatorio' });
+    } else if (!apellido) {
+        return res.status(200).json({ message: 'Apellido es obligatorio' });
+    } else if (!fecha_nacimiento) {
+        return res.status(200).json({ message: 'Fecha de nacimiento es obligatorio' });
+    } else if (!direccion) {
+        return res.status(200).json({ message: 'Direccion es obligatorio' });
+    } else if (!telefono) {
+        return res.status(200).json({ message: 'Telefono es obligatorio' });
+    } else if (!email) {
+        return res.status(200).json({ message: 'Email es obligatorio' });
+    } else if (!logid) {
+        return res.status(200).json({ message: 'LogId es obligatorio' });
+    }
+    const result = await pool.query('INSERT INTO Funcionarios (Ci, Nombre, Apellido, Fch_Nacimiento, Direccion, Telefono, Email, LogId) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
         [ci, nombre, apellido, fecha_nacimiento, direccion, telefono, email, logid]);
-    res.send({
-        error: false,
-        message: 'Funcionario creado',
-        ci: ci,
-        Nombre: nombre,
-        Apellido: apellido,
-        Fch_Nacimiento: fecha_nacimiento,
-        Direccion: direccion,
-        Telefono: telefono,
-        Email: email,
-        LogId: logid
-    });
+    if (!result) {
+        res.status(200).json({ error: true, message: 'Funcionario ya existe' });
+        console.log("Funcionario ya existe");
+    } else {
+        res.json({error: false, message: 'Funcionario Creado'});
+    }
 };
 
 const putFuncionario = async (req: Request, res: Response) => {

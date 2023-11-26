@@ -12,29 +12,29 @@ async function botonCrearFuncionario() {
     const password = document.getElementById("password").value.toString();
     const password1 = document.getElementById("password1").value.toString();
 
+    const login = {
+        "logid": ci.toString(),
+        "password": password
+    };
+
+    const funcionario = {
+        "ci": ci,
+        "nombre": nombre,
+        "apellido": apellido,
+        "fecha_nacimiento": fch_nacimiento,
+        "direccion": dir,
+        "telefono": telefono,
+        "email": email,
+        "logid": ci.toString()
+    };
     if (ci === "" || nombre === "" || apellido === "" || fch_nacimiento === "" || dir === "" || telefono === "" || email === "" || password === "" || password1 === "") {
         alert("Debe completar todos los campos");
     } else if (password !== password1) {
         alert("Las contraseñas no coinciden");
     } else {
-        const login = {
-            "LogId": ci.toString(),
-            "Password": password
-        }
-
-        const funcionario = {
-            "Ci": ci,
-            "Nombre": nombre,
-            "Apellido": apellido,
-            "Fch_Nacimiento": fch_nacimiento,
-            "Direccion": dir,
-            "Telefono": telefono,
-            "Email": email,
-            "LodId": ci.toString()
-        }
         try {
-            const funcionarioCreado = await postFuncionario(funcionario);
             const loginCreado = await postLogin(login);
+            const funcionarioCreado = await postFuncionario(funcionario);
             console.log(funcionarioCreado);
             console.log(loginCreado);
             if (funcionarioCreado && loginCreado && funcionarioCreado.error === false && loginCreado.error === false) {
@@ -48,6 +48,7 @@ async function botonCrearFuncionario() {
                 document.getElementById("password").value = "";
                 document.getElementById("password1").value = "";
                 alert("Funcionario creado con éxito");
+                window.location.href = "./login.html";
             } else {
                 alert("Hubo un error al crear el funcionario");
             }

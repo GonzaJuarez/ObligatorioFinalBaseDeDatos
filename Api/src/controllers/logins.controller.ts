@@ -24,20 +24,20 @@ const getLoginById = async (req: Request, res: Response) => {
 };
 
 const postLogin = async (req: Request, res: Response) => {
-    const { logid, password, rol } = req.body;
-    const result = await pool.query('INSERT INTO Logins VALUES (?, ?, ?)', [logid, password, rol]);
-    res.json({
-        message: 'Login creado',
-        logid: logid,
-        password: password,
-        rol: rol
-    });
+    const { logid, password} = req.body;
+    let result = await pool.query('INSERT INTO Logins (LogId, Password) VALUES (?, ?)', [logid, password]);
+    if (!result) {
+        res.status(200).json({ error: true, message: 'Login ya existe' });
+        console.log("Login ya existe");
+    } else {
+        res.json({error: false, message: 'Login Creado'});
+    }
 };
 
 const putLogin = async (req: Request, res: Response) => {
     const { logid } = req.params;
-    const { password, rol } = req.body;
-    const result = await pool.query('UPDATE Logins SET password = ?, rol = ? WHERE logid = ?', [password, rol, logid]);
+    const { password} = req.body;
+    const result = await pool.query('UPDATE Logins SET password = ? WHERE logid = ?', [password, logid]);
     if (result.length <= 0) {
         res.status(404).json({ message: "Login no encontrado" });
         console.log("Login no encontrado");
@@ -45,8 +45,7 @@ const putLogin = async (req: Request, res: Response) => {
         res.json({
             message: 'Login actualizado',
             logid: logid,
-            password: password,
-            rol: rol
+            password: password
         });
     }
 };
