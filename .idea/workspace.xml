@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3de56507-e0ad-4ed6-898a-2b776b767232" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Obligatorio Final/HTML/formulario_carnet_de_salud.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obligatorio Final/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obligatorio Final/alta_funcionarios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obligatorio Final/login.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ObligatorioFinalBaseDeDatos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ObligatorioFinalBaseDeDatos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/controllers/funcionarios.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/controllers/funcionarios.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/src/controllers/logins.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/controllers/logins.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/dataBase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/dataBase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/routes/logins.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/routes/logins.route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base de Datos/ScriptBaseDeDatos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Base de Datos/ScriptBaseDeDatos.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base de Datos/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Base de Datos/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/alta_funcionario.html" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/HTML/alta_funcionario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/ficha_fucionarios.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/HTML/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obligatorio Final/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obligatorio Final/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/alta_funcionarios.js" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/alta_funcionarios.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +45,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;LoginPronto&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,7 +55,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JavaScript Debug.ficha_fucionarios.html">
+  <component name="RunManager" selected="JavaScript Debug.alta_funcionario.html">
     <configuration name="alta_funcionario.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ObligatorioFinalBaseDeDatos/Obligatorio Final/HTML/alta_funcionario.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -77,8 +64,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.ficha_fucionarios.html" />
         <item itemvalue="JavaScript Debug.alta_funcionario.html" />
+        <item itemvalue="JavaScript Debug.ficha_fucionarios.html" />
       </list>
     </recent_temporary>
   </component>
@@ -96,6 +83,8 @@
       <workItem from="1700956688312" duration="8954000" />
       <workItem from="1701008914658" duration="737000" />
       <workItem from="1701012975226" duration="7025000" />
+      <workItem from="1701022192313" duration="117000" />
+      <workItem from="1701022536719" duration="4289000" />
     </task>
     <servers />
   </component>
