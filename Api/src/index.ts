@@ -6,14 +6,22 @@ import logins from "./routes/logins.route";
 import periodos_Actualizacion from "./routes/periodosActualizacion.route";
 import rol from "./routes/roles.route";
 import pool  from './dataBase';
+const cors = require('cors');
 
 const app = express();
 
+const PORT = 3000;
 
+app.use(cors());
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*'); // Permitir solicitudes desde cualquier origen
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+});
 app.use(express.json());
 app.use('/api', agenda, carnet_de_Salud, funcionarios, logins, periodos_Actualizacion, rol);
+app.options('*', cors());
 
-const PORT = 3000;
 
 app.get('/', (req, res) => {
     console.log("Api corriendo")

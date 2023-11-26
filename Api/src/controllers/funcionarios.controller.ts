@@ -19,19 +19,21 @@ const getFuncionarioByCi = async (req: Request, res: Response) => {
 
 const postFuncionario = async (req: Request, res: Response) => {
     const { ci, nombre, apellido, fecha_nacimiento, direccion, telefono, email, logid } = req.body;
-    const [rows] = await pool.query('INSERT INTO Funcionarios (ci, nombre, apellido, fch_nacimiento, direccion, telefono, email, logid) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+
+    const [ rows] = await pool.query('INSERT INTO Funcionarios (Ci, Nombre, Apellido, Fch_Nacimiento, Direccion, Telefono, Email, LogId) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+
         [ci, nombre, apellido, fecha_nacimiento, direccion, telefono, email, logid]);
     res.send({
         error: false,
         message: 'Funcionario creado',
         ci: ci,
-        nombre: nombre,
-        apellido: apellido,
-        fecha_nacimiento: fecha_nacimiento,
-        direccion: direccion,
-        telefono: telefono,
-        email: email,
-        logid: logid
+        Nombre: nombre,
+        Apellido: apellido,
+        Fch_Nacimiento: fecha_nacimiento,
+        Direccion: direccion,
+        Telefono: telefono,
+        Email: email,
+        LogId: logid
     });
 };
 

@@ -1,0 +1,85 @@
+<meta charset="UTF-8">
+<title>Ficah de Funcionario</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="stylesheet" href="../style.css">
+
+
+<div class="container" id="ficha_funcionario">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="titulo1">
+                <a>Ficha de Funcionario</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="titulo2">
+                <div>
+                    Datos Personales
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="ci" class="form-label subtitulo">Cedula de Identidad</label>
+                            <input type="text" class="form-control" id="ci" placeholder="Cedula de Identidad" value="Cambiar la cedula" disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label subtitulo">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellido" class="form-label subtitulo">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellido" disabled>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="fch_Nacimiento" class="form-label subtitulo">Fecha Nacimiento</label>
+                            <input type="date" class="form-control" id="fch_Nacimiento" aria-describedby="inputGroupPrepend2" placeholder="Fecha Nacimiento" disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="dir" class="form-label subtitulo">Direccion</label>
+                            <input type="text" class="form-control" id="dir" placeholder="Direccion" disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telefono" class="form-label subtitulo">Telefono</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="Telefono" disabled>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="email" class="form-label subtitulo">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="Email" disabled>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn" type="submit">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="titulo2">
+                <div>
+                    Carnet de Salud
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="ci" class="form-label subtitulo">Fecha de Vencimiento</label>
+                            <input type="text" class="form-control" id="fch_Vencimiento" placeholder="fch_Venciemiento" value="01/01/2003" disabled>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="comprbante" class="form-label subtitulo">comprbante</label>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card-image">
+                                <img src="../carnedesalud.jpg" alt="comprobante" class="fit-picture" id="comprbante">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn" type="submit">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
