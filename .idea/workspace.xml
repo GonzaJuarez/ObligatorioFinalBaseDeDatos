@@ -8,7 +8,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/src/controllers/funcionarios.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/controllers/funcionarios.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/src/controllers/logins.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/controllers/logins.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obligatorio Final/alta_funcionarios.js" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/alta_funcionarios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base de Datos/ScriptBaseDeDatos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Base de Datos/ScriptBaseDeDatos.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/FUNCIONES/agenda_carnet.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/FUNCIONES/agenda_carnet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/FUNCIONES/ficha_funcionarios.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/FUNCIONES/ficha_funcionarios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/FUNCIONES/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/FUNCIONES/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HTML/agenda_carne.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/HTML/ficha_funcionarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/HTML/ficha_funcionarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/agenda_carne.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="tsconfig.json" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -39,22 +46,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;LoginPronto&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\gonza\\OneDrive\\Escritorio\\Base de Datos\\ObligatorioFinalBaseDeDatos\\Api\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "cositas",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\gonza\\OneDrive\\Escritorio\\Base de Datos\\ObligatorioFinalBaseDeDatos\\Api\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gonza\OneDrive\Escritorio\Base de Datos\ObligatorioFinalBaseDeDatos\Obligatorio Final\FUNCIONES" />
+      <recent name="C:\Users\gonza\OneDrive\Escritorio\Base de Datos\ObligatorioFinalBaseDeDatos\Obligatorio Final\IMAGENES" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.alta_funcionario.html">
     <configuration name="alta_funcionario.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ObligatorioFinalBaseDeDatos/Obligatorio Final/HTML/alta_funcionario.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -84,16 +97,13 @@
       <workItem from="1701008914658" duration="737000" />
       <workItem from="1701012975226" duration="7025000" />
       <workItem from="1701022192313" duration="117000" />
-      <workItem from="1701022536719" duration="4289000" />
+      <workItem from="1701022536719" duration="7033000" />
+      <workItem from="1701032486725" duration="137000" />
+      <workItem from="1701034745385" duration="8601000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/Obligatorio Final/Login.js" />
-      </list>
-    </option>
   </component>
 </project>

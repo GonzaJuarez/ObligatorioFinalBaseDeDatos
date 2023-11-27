@@ -6,7 +6,7 @@ use Obligatorio_Base_de_Datos;
 -- Logins (LogId, Password)
 create table Logins (
     LogId varchar(50) not null,
-    UserPassword varchar(50) not null,
+    Password varchar(50) not null,
     primary key (LogId)
 );
 
@@ -67,7 +67,7 @@ create table UsuarioRol (
 );
 
 -- inserta los datos de prueba 10 para cada tabla
-insert into Logins (logid, password) values
+insert into Logins (logid, Password) values
 ('1234567', '123'),
 ('2345678', '123'),
 ('3456789', '123'),
