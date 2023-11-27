@@ -10,5 +10,4 @@ router.get('/getCarnetSaludByCi/:ci', getCarnetSaludByCi);
 router.put('/putCarnetSalud/:ci', putCarnetSalud);
 router.delete('/deleteCarnetSalud/:ci', deleteCarnetSalud);
 
-
 export default router
