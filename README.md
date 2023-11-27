@@ -113,3 +113,16 @@ La base de datos esta compuesta por 7 tablas, las cuales son:
 Pablo Constantino\
 Enzo Cantoni\
 Gonzalo Juarez
+
+
+## To do
+- Agenda Carnet base de datos (enzo) 
+- - cargar las fechas disponibles
+- - guardar en base de datos 
+- periodo de actualizacion (pablo)
+- - Cargar fecha agenda
+- - contolar actualizacion de datos dentro de fecha 
+- - cambio de periodo de actualizacion
+- formulario carnet de salud (gonza)
+- - Editar carnet de salud
+- - arreglar cosas

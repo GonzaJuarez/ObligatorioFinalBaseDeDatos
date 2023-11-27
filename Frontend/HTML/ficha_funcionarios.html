@@ -7,10 +7,13 @@
 
 <div class="container" id="ficha_funcionario">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-9">
             <div class="titulo1">
                 <a>Ficha de Funcionario</a>
             </div>
+        </div>
+        <div class="col-md-3">
+            <button class="btn" type="button" id="logOut" onclick="botonLogOut()">Log Out</button>
         </div>
         <div class="col-md-6">
             <div class="titulo2">
@@ -48,7 +51,7 @@
                             <input type="text" class="form-control" id="email" placeholder="Email" disabled>
                         </div>
                         <div class="col-12">
-                            <button class="btn" type="button" id="botonEdit" onclick="botonEditarDatosPersonales()">Editar</button>
+                            <button class="btn" type="button" id="botonEditDatosPersonales" onclick="botonEditarDatosPersonales()">Editar</button>
                         </div>
                     </div>
                 </div>
@@ -62,19 +65,20 @@
                 <div class="card">
                     <div class="row">
                         <div class="col-md-12">
-                            <label for="ci" class="form-label subtitulo">Fecha de Vencimiento</label>
-                            <input type="text" class="form-control" id="fch_Vencimiento" placeholder="fch_Venciemiento" value="01/01/2003" disabled>
+                            <label for="fch_Emision" class="form-label subtitulo">Fecha de Vencimiento</label>
+                            <input type="text" class="form-control" id="fch_Emision" placeholder="fch_Emision" value="Fecha de Emision" disabled>
                         </div>
                         <div class="col-md-12">
-                            <label for="comprbante" class="form-label subtitulo">Comprbante</label>
+                            <label for="fch_Vencimiento" class="form-label subtitulo">Fecha de Vencimiento</label>
+                            <input type="text" class="form-control" id="fch_Vencimiento" placeholder="fch_Venciemiento" value="Fecha de Vencimiento" disabled>
                         </div>
-                        <div class="col-md-12">
-                            <div class="card-image">
-                                <img src="../../Imagenes/carnedesalud.jpg" alt="comprobante" class="fit-picture" id="comprbante">
-                            </div>
+                        <div class="col-6">
+                            <button class="btn" type="button" id="botonEditCarnetSalud" onclick="botonEditarCarnetSalud()">Editar</button>
                         </div>
-                        <div class="col-12">
-                            <button class="btn" type="button">Editar</button>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Agregar Carnet de Salud
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -83,3 +87,46 @@
     </div>
 </div>
 
+
+
+<!-- Compobante de carnet de salud -->
+<!-- <div class="col-md-12">
+    <label for="comprbante" class="form-label subtitulo">Comprbante</label>
+</div>
+<div class="col-md-12">
+    <div class="card-image">
+        <img src="../../Imagenes/carnedesalud.jpg" alt="comprobante" class="fit-picture" id="comprbante">
+    </div>
+</div> -->
+
+
+<div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Agregar Carnet de Salud</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="fch_Emision" class="form-label subtitulo">Fecha de Emision</label>
+                        <input type="date" class="form-control" id="fch_EmisionAgregar" aria-describedby="inputGroupPrepend2" placeholder="Fecha de Emision">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="fch_Vencimiento" class="form-label subtitulo">Fecha de Vencimiento</label>
+                        <input type="date" class="form-control" id="fch_VencimientoAgregar" aria-describedby="inputGroupPrepend2" placeholder="Fecha de Vencimiento">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="comprobante" class="form-label subtitulo">Comprobante</label>
+                        <input type="file" class="form-control" id="comprobante" aria-describedby="inputGroupPrepend2" placeholder="Comprobante">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
