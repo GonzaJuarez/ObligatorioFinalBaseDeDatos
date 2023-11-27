@@ -8,13 +8,15 @@ const getFuncionarios = async (req: Request, res: Response) => {
 
 const getFuncionarioByCi = async (req: Request, res: Response) => {
     const { ci } = req.params;
-    const result = await pool.query('SELECT * FROM Funcionarios WHERE ci = ?', [ci]);
+    let result = await pool.query('SELECT * FROM Funcionarios WHERE ci = ?', [ci]);
+    result = JSON.parse(JSON.stringify(result[0]));
     if (result.length <= 0) {
-        res.status(404).json({ message: "Funcionario no encontrado" });
+        res.status(200).json({ error: true, message: "Funcionario no encontrado" });
         console.log("Funcionario no encontrado");
     } else {
-        res.json(result[0]);
+        res.json(result);
     }
+
 };
 
 const postFuncionario = async (req: Request, res: Response) => {

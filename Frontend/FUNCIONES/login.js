@@ -19,6 +19,8 @@ async function botonLogin() {
 
             if (login && login.error === false) {
                 document.getElementById("usuario").value = ""
+                document.getElementById("password").value = ""
+                localStorage.setItem("ci", usuario);
                 window.location.href = "./ficha_funcionarios.html";
             } else {
                 alert("Usuario o contraseña incorrectos");

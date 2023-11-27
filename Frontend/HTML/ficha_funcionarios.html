@@ -2,6 +2,7 @@
 <title>Ficah de Funcionario</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <link rel="stylesheet" href="../style.css">
+<script src="../FUNCIONES/ficha_funcionarios.js"></script>
 
 
 <div class="container" id="ficha_funcionario">
@@ -32,7 +33,7 @@
                         </div>
                         <div class="col-md-12">
                             <label for="fch_Nacimiento" class="form-label subtitulo">Fecha Nacimiento</label>
-                            <input type="date" class="form-control" id="fch_Nacimiento" aria-describedby="inputGroupPrepend2" placeholder="Fecha Nacimiento" disabled>
+                            <input type="text" class="form-control" id="fch_Nacimiento" aria-describedby="inputGroupPrepend2" placeholder="Fecha Nacimiento" disabled>
                         </div>
                         <div class="col-md-6">
                             <label for="dir" class="form-label subtitulo">Direccion</label>
@@ -47,12 +48,11 @@
                             <input type="text" class="form-control" id="email" placeholder="Email" disabled>
                         </div>
                         <div class="col-12">
-                            <button class="btn" type="submit">Editar</button>
+                            <button class="btn" type="button" id="botonEdit" onclick="botonEditarDatosPersonales()">Editar</button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="col-md-6">
             <div class="titulo2">
@@ -66,15 +66,15 @@
                             <input type="text" class="form-control" id="fch_Vencimiento" placeholder="fch_Venciemiento" value="01/01/2003" disabled>
                         </div>
                         <div class="col-md-12">
-                            <label for="comprbante" class="form-label subtitulo">comprbante</label>
+                            <label for="comprbante" class="form-label subtitulo">Comprbante</label>
                         </div>
                         <div class="col-md-12">
                             <div class="card-image">
-                                <img src="../IMAGENES/carnedesalud.jpg" alt="comprobante" class="fit-picture" id="comprbante">
+                                <img src="../../Imagenes/carnedesalud.jpg" alt="comprobante" class="fit-picture" id="comprbante">
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn" type="submit">Editar</button>
+                            <button class="btn" type="button">Editar</button>
                         </div>
                     </div>
                 </div>
