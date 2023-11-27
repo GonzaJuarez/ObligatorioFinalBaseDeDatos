@@ -6,7 +6,7 @@ const router = express.Router();
 router.post('/postPeriodoActualizacion', postPeriodoActualizacion);
 router.get('/getPeriodosActualizacion', getPeriodosActualizacion);
 router.get('/getPeriodoActualizacionByFch/:ci', getPeriodoActualizacionByFch);
-router.put('/putPeriodoActualizacion/:ci', putPeriodoActualizacion);
+router.put('/putPeriodoActualizacion/:fch_inicio', putPeriodoActualizacion);
 router.delete('/deletePeriodoActualizacion/:ci', deletePeriodoActualizacion);
 
 
