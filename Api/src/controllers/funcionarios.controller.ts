@@ -86,4 +86,16 @@ const deleteFuncionario = async (req: Request, res: Response) => {
     }
 };
 
-export { getFuncionarios, getFuncionarioByCi, postFuncionario, putFuncionario, deleteFuncionario };
+const getFuncionarioRol = async (req: Request, res: Response) => {
+    const { ci } = req.params;
+    let result = await pool.query('SELECT * FROM UsuarioRol WHERE ci = ?', [ci]);
+    result = JSON.parse(JSON.stringify(result[0]));
+    if (result.length <= 0) {
+        res.status(200).json({ error: true, message: "Funcionario no encontrado" });
+        console.log("Funcionario no encontrado");
+    } else {
+        res.json(result);
+    }
+}
+
+export { getFuncionarios, getFuncionarioByCi, postFuncionario, putFuncionario, deleteFuncionario, getFuncionarioRol };

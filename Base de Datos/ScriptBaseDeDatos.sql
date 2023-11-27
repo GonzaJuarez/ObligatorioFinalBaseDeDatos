@@ -116,7 +116,7 @@ insert into Carnet_Salud (ci, fch_emision, fch_vencimiento, comprobante) values
 (1234568, '2020-01-01', '2020-01-01', 'Comprobante 10');
 
 insert into Periodos_Actualizacion (año, semestre, fch_inicio, fch_fin)
-values (2020, 1, '2023-11-01', '2023-11-15');
+values (2023, 2, '2023-11-01', '2023-11-15');
 
 insert into Roles (rol) values
 ('Administrador'),
