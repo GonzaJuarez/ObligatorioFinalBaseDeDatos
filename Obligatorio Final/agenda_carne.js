@@ -39,3 +39,14 @@ function postReserva(reserva) {
         body: JSON.stringify(reserva),
     }).then((response) => response.json());
 }
+
+function getHorasByDate(fecha) {
+    console.log(fecha);
+    return fetch("http://localhost:3000/api/getAgendas", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ fecha }),
+    }).then((response) => response.json());
+}
