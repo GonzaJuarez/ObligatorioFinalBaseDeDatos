@@ -6,7 +6,7 @@ use Obligatorio_Base_de_Datos;
 -- Logins (LogId, Password)
 create table Logins (
     LogId varchar(50) not null,
-    Password varchar(50) not null,
+    UserPassword varchar(50) not null,
     primary key (LogId)
 );
 
@@ -27,9 +27,9 @@ create table Funcionarios (
 -- Agenda (Nro, Ci, Fch_Agenda)
 create table Agenda (
     Nro int not null,
-    Ci int not null,
+    Ci int,
     Fch_Agenda date not null,
-    primary key (Nro),
+    primary key (Nro, Fch_Agenda),
     foreign key (Ci) references Funcionarios(Ci)
 );
 

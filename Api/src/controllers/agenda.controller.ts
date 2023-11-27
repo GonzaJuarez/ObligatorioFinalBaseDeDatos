@@ -18,13 +18,12 @@ const getAgendaByCi = async (req: Request, res: Response) => {
 };
 
 const postAgenda = async (req: Request, res: Response) => {
-const { nro, ci, fch_agenda } = req.body;
-    const result = await pool.query('INSERT INTO Agenda SET ?', {
-        nro: nro,
-        ci: ci,
-        fch_agenda: fch_agenda
-    });
+    const { nro, ci, fch_agenda } = req.body;
+    console.log(req.body);
+    const result = await pool.query('INSERT INTO Agenda (Nro, Ci, Fch_Agenda) VALUES (?, ?, ?)', [nro, ci, fch_agenda]);
+    console.log(result);
     res.json({
+        error: false,
         message: 'Agenda creado',
         nro: nro,
         ci: ci,
