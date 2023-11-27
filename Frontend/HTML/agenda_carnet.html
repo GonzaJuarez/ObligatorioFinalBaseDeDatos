@@ -18,7 +18,7 @@
                             <label for="calendario_reserva" class="form-label subtitulo">Seleccionar Fecha:</label>
                         </div>
                         <div class="col-md-12">
-                            <input type="date" id="calendario_reserva" class="form-control" required>
+                            <input type="date" id="calendario_reserva" class="form-control" required onchange="getHorasByDate(this.value).then(data => console.log(data));">
                         </div>
                         <div class="col-md-12">
                             <label for="horas_disp" class="form-label subtitulo">Seleccionar Hora:</label>
