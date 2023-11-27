@@ -6,9 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="3de56507-e0ad-4ed6-898a-2b776b767232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/controllers/funcionarios.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/controllers/funcionarios.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/controllers/logins.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/controllers/logins.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obligatorio Final/alta_funcionarios.js" beforeDir="false" afterPath="$PROJECT_DIR$/Obligatorio Final/alta_funcionarios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/agenda_carne.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/alta_funcionario.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/ficha_funcionarios.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/formulario_carnet_de_salud.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/HTML/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/agenda_carne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/alta_funcionarios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/carnedesalud.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/login.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obligatorio Final/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +30,7 @@
       <list>
         <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="tsconfig.json" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -45,7 +56,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;LoginPronto&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alta__de__funcionarios&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -55,6 +66,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gonza\OneDrive\Escritorio\Base de Datos\ObligatorioFinalBaseDeDatos\Obligatorio Final\FUNCIONES" />
+      <recent name="C:\Users\gonza\OneDrive\Escritorio\Base de Datos\ObligatorioFinalBaseDeDatos\Obligatorio Final\IMAGENES" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.alta_funcionario.html">
     <configuration name="alta_funcionario.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ObligatorioFinalBaseDeDatos/Obligatorio Final/HTML/alta_funcionario.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -84,16 +101,13 @@
       <workItem from="1701008914658" duration="737000" />
       <workItem from="1701012975226" duration="7025000" />
       <workItem from="1701022192313" duration="117000" />
-      <workItem from="1701022536719" duration="4289000" />
+      <workItem from="1701022536719" duration="7033000" />
+      <workItem from="1701032486725" duration="137000" />
+      <workItem from="1701034745385" duration="1952000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/Obligatorio Final/Login.js" />
-      </list>
-    </option>
   </component>
 </project>
