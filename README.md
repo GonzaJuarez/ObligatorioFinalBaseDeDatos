@@ -18,6 +18,7 @@ En esta seccion se detallara como instalar el proyecto en su computadora.
 - Abrir otra consola en la carpeta del proyecto.
 - Moverse a la carpeta "Base de Datos" con el comando `cd Base de Datos`.
 - Ejecutar el comando 'docker-compose up' para iniciar la base de datos en Docker.
+- Correr el script de creacion de la base de datos en insercion de datos "ScriptBaseDeDatos.sql" en DataGrip.
 
 ![img_1.png](./Imagenes/img_1.png)
 
