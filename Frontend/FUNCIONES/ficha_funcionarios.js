@@ -5,6 +5,10 @@ const urlGetCarnetDeSalud = 'http://localhost:3000/api/getCarnetSaludByCi/'+ci;
 const urlPutCarnetDeSalud = 'http://localhost:3000/api/putCarnetSalud/'+ci;
 const urlPostCarnetDeSalud = 'http://localhost:3000/api/postCarnetSalud';
 
+function redirect(link){
+    window.location.href = link;
+}
+
 async function cargarDatos() {
     try {
         const funcionario = await getFuncionarioByCi();

@@ -18,7 +18,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="calendario_reserva" class="form-label subtitulo">Seleccionar Fecha:</label>
-                    <input type="date" id="calendario_reserva" class="form-control" min="" max="" required>
+                    <input type="date" id="calendario_reserva" class="form-control" min="" max="" required onchange="actualizarHoras(this.value);">
                 </div>
             </div>
             <div class="col-md-6">
@@ -47,7 +47,7 @@
             <button type="button" class="btn btn-primary" onclick="botonReservar()">Reservar</button>
         </div>
     </div>
-    <div class="row justify-content-center mt-4">
+    <div id="actualizar_fecha" class="row justify-content-center mt-4" style="display: none;">
         <div class="col-md-6"> 
             <div id="admin_view">
                 <div class="form-group">

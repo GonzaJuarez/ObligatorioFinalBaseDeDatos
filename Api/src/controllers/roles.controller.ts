@@ -45,6 +45,23 @@ const putRol = async (req: Request, res: Response) => {
     }
 };
 
+const postUsuarioRol = async (req: Request, res: Response) => {
+    const { Ci, RolId } = req.body;
+    const result = await pool.query('INSERT INTO UsuarioRol (Ci, RolId) VALUES (?, ?)',
+        [Ci, RolId]);
+    if (result.length <= 0) {
+        res.status(404).json({ error: true, message: "Rol no encontrado" });
+        console.log("Rol no encontrado");
+    } else {
+        res.json({
+            error: false,
+            message: 'UsuarioRol Creado',
+            ci: Ci,
+            rolId: RolId
+        });
+    }
+};
+
 const deleteRol = async (req: Request, res: Response) => {
     const { ci } = req.params;
     const result = await pool.query('DELETE FROM Rol WHERE ci = ?', [ci]);
@@ -59,4 +76,4 @@ const deleteRol = async (req: Request, res: Response) => {
     }
 };
 
-export { postRol, getRoles, getRolByCi, putRol, deleteRol };
+export { postRol, getRoles, getRolByCi, putRol, deleteRol, postUsuarioRol };

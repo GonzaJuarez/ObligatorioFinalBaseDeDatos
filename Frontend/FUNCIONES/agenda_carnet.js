@@ -4,6 +4,36 @@ const urlGetPeriodos = "http://localhost:3000/api/getPeriodosActualizacion";
 const urlGetFuncionarioRol = "http://localhost:3000/api/getFuncionarioRol/" + ci;
 const urlputPeriodoActualizacion = "http://localhost:3000/api/putPeriodoActualizacion";
 
+addEventListener("DOMContentLoaded", () => {
+    const ci = localStorage.getItem("ci");
+    getRolByCi(ci).then((rol) => {
+        console.log("rol", rol);
+        if (rol.error == true) {
+            console.log("error: ", rol);
+            document.getElementById("actualizar_fecha").style.display = "none";
+        } else {
+            console.log("encontrado ", rol.RolId)
+            if (rol.RolId == 1) {
+                document.getElementById("actualizar_fecha").style.display = "";
+                console.log("admin");
+            } else {
+                document.getElementById("actualizar_fecha").style.display = "none";
+            }
+            
+        }
+    });
+});
+
+
+function getRolByCi(ci) {
+    return fetch("http://localhost:3000/api/getFuncionarioRol/" + ci, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    }).then((response) => response.json());
+}
+
 getPeriodosActualizacion().then((periodos) => {
     console.log(periodos);
     const fechaInicio = getFechaInicio(periodos);
@@ -96,8 +126,8 @@ async function displayAdminView() {
     console.log("adminView", adminView);
     const funcionarioRol = await getFuncionarioRol().then((funcionarioRol) => funcionarioRol);
     console.log("funcionarioRol", funcionarioRol);
-    console.log("funcionarioRol.RolId", funcionarioRol[0].RolId);
-    if (funcionarioRol[0].RolId === 1) {
+    console.log("funcionarioRol.RolId", funcionarioRol.RolId);
+    if (funcionarioRol.RolId === 1) {
         adminView.style.display = "block";
     } else {
         adminView.style.display = "none";
@@ -143,4 +173,18 @@ function getHorasByDate(fecha) {
         },
         body: JSON.stringify({ fecha }),
           }).then((response) => response.json());
+}
+
+function actualizarHoras(date) {
+    getHorasByDate(date).then((horas) => {
+        console.log(horas);
+        const horasDisp = document.getElementById("horas_disp");
+        horasDisp.innerHTML = "";
+        horas.forEach((hora) => {   
+            const option = document.createElement("option");
+            option.value = hora.nro;
+            option.innerHTML = hora.nro;
+            horasDisp.appendChild(option);
+        });
+    });
 }
